@@ -24,6 +24,8 @@ end
 #Word.capitalize just capitalize only the first word, while this 'titieize' method will title each
 #individual word
 
+
+#These codes are there to help me test whether the word combos are effective
 words_to_generate = ["hat", "car keys", "wedding", "sorrow", "violin case", "flower"]
 
 exotic_words = ['museum','plaza','center','foundation','academy']
@@ -35,13 +37,13 @@ words_to_generate.each do |normal_word|
 	end
 end
 
-
-
 # words_to_generate.each do |word|
 # 	generate_location(word)
 # 	generate_think_tank(word)
 # end
 
+
+#Additional Notes:
 # Deleted Words: 'research facilitiy'
 
 # Store-related nouns:
