@@ -8,7 +8,7 @@ words_file = File.open("words.yml")
 
 @selfverbs = @words_data["SelfVerbs"]
 
-@characters = characters_data["Characters"]
+CHARACTERS = characters_data["Characters"]
 
 #Method to sample from a Hash
 #Reference: http://stackoverflow.com/questions/15454632/is-there-an-equivalent-to-arraysample-for-hashes-in-ruby
