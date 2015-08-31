@@ -1,5 +1,3 @@
-require 'faker'
-
 def normal_location_noun
 	['store', 'shop', 'superstore', 'megastore', 'boutique', 'emporium', 'market'].sample
 end
