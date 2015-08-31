@@ -224,7 +224,7 @@ Characters:
  Emotion:
   <<: *Emotion
   Enemy:
-   <<: *Emotion
+   <<: *Reason
  Sidekick:
   <<: *Sidekick
   Enemy:
