@@ -1,13 +1,17 @@
 require_relative 'story_generator'
+require 'faker'
 
 class Character
-	attr_reader :name, :enemy, :type, :traits
+	attr_reader :name, :enemy, :type, :traits, :job, :job_purpose, :company
 
 	def initialize(args)
 		@type = args[:type]
 		@name = args[:name]
 		@traits = args[:traits]
 		@enemy = args[:enemy]
+		@job = Faker::Name.title
+		@job_purpose = Faker::Company.bs
+		@company = Faker::Company.name
 	end
 end
 
@@ -32,82 +36,135 @@ end
 
 p character_array.length
 
-main_character = character_array.shuffle!.pop
+hero = character_array.shuffle!.pop
 
-puts "The main character is #{main_character.name}, and he is a #{main_character.type}!"
-
-p character_array.length
-
-the_enemy = find_and_return(character_array, main_character.enemy )
-
-puts "And the monster is #{the_enemy.name}, the #{the_enemy.type}!"
+puts "The main character is #{hero.name}, and he is a #{hero.type}!"
 
 p character_array.length
 
-puts "The main character is #{main_character.name}, and his opponent is #{the_enemy.name}"
+monster = find_and_return(character_array, hero.enemy )
+
+puts "And the monster is #{monster.name}, the #{monster.type}!"
+
+quest_giver = character_array.shuffle!.pop
+
+puts "And the quest_giver is #{quest_giver.name}, the #{quest_giver.type}!"
+
+monster_kid = find_and_return(character_array, quest_giver.enemy)
 
 
-# main_character = sample(@characters)
-# the_enemy = enemy(main_character)
+noun = ["hat", "car keys", "wedding", "sorrow", "violin case", "flower"].sample
 
-# Test Sentence 1
-puts "One day, while examining his perfect society, the Unblinking Eye discovered that #{location} was being attacked. The Unblinking Eye #{random_word(main_character.traits)}."
+noun += " " + ['museum','plaza','center','foundation','academy'].sample
 
-# puts "\n"
-
-# # Test Sentence 2
-puts "At the #{location}, the Tempeter #{random_word(the_enemy.traits,"Evaluation")}. He was happy, as most people
-   were. In the bad old days, the Tempeter would #{adverb} work every day of his life. And he
-   hated it! Now, he no longer has to work. But now the Tempeter was bored. And he wanted to pass
-   the time. So the Tempeter had an idea: 'I want to write a poem' The Tempeter was in a happy mood.
-
-   He #{adverb} went to his friend, the Unblinking Eye. The Unblinking Eye #{random_word(main_character.traits, "Purpose")}, and
-   #{adverb} wrote the story. The #{filler} button analyzed the character’s inner personality and wrote an excellent poem.
-
-   The character looked at the #{filler} poem. It was great, it was grand, and it was terrible. The character tore it to pieces. The other character was confused. “I only wanted to make you happy, because I wanted you to---”
-
-   “I wanted to write a poem! Not you!” The first character cried."
+noun = noun.split(" ").map(&:capitalize).join(" ")
 
 puts <<-END
-When I was some fifteen years old, I once made the remark, "Why, that's impossible."
-#{main_character.name} was a scientist. He replied gently, "My boy, when you are grown older and wiser you will realize that nothing is impossible."
-Somehow, that statement stayed with me.
+#{hero.name} never cared too much about #{noun}. It was too far away, too remote for him
+to worry about. Instead, he would busy himself with his career as a #{hero.job},
+where he would #{hero.job_purpose}. While he would work, #{hero.name} wished for some
+adventure in his life.
 
-I recall that when I got his note with its few sentences bidding me come to see him, I had a premonition that it marked the beginning of something strange. As though the portals of a mystery were opening to me!
-#{main_character.name} received me in his living-room. He admitted me himself. He told me that his man servant was out.
-It was a small room, with leather-covered easy chairs, rugs on its hardwood floor, and sober brown portieres at its door and windows.
-A brown parchment shade shrouded the electrolier on the table. It was the only light in the room. It cast its mellow sheen upon #{main_character.name}'s lean graceful figure as he #{random_word(main_character.traits)}.
-He said, "#{the_enemy.name}, I want a little talk with you. I've something to tell you—something to offer you."
-He #{random_word(main_character.traits, "Motivation")}. And I saw that his hand was trembling.
-"But I don't understand what you mean," I protested.
+#{hero.name}'s boss was #{quest_giver.name}, a #{quest_giver.job}. He was not a nice man,
+ but he was not a mean man either, and desired to #{quest_giver.job_purpose}.
 
-He retorted, "I'm suggesting that you might be tired of being a clerk in a brokerage office. Tired of this humdrum world that we call civilization. Tired of Wall Street."
-"I am, #{main_character.name}. Heavens, that's true enough."
+One day, #{monster.name} arrived to the corporate offices of #{hero.company}. A guard came and asked
+for an 'ID' to verify his presence. #{monster.name} said that he came from the #{noun}, here for "vengance".
+#{monster.name} #{random_word(monster.traits)}, and so stabbed the guard.
 
-His eyes held me. He was smiling half #{adverb}: his voice was only half serious. Yet I could see, in the smoldering depths of those luminous dark eyes, a deadly seriousness that belied his smiling lips and his gay tone.
-He interrupted me with, "And I offer you a chance for deeds of high adventuring. The romance of danger, of pitting your wits against villainy to make right triumph over wrong, and to win for yourself power and riches—and perhaps a fair lady...."
+#{hero.name} saw #{monster.name} from his windows, and #{random_word(hero.traits, "Purpose")}.
+#{monster.name} saw #{hero.name} right back, and #{random_word(monster.traits, "Purpose")}.
 
-"#{main_character.name}, you talk like a #{filler} swashbuckler of the middle ages."
+#{monster.name} had a purpose: to kill #{quest_giver.name}. #{monster.name} hated
+how #{quest_giver.name} tried to destroy #{noun} years ago. It was time to pay him back.
 
-I thought he would grin, but he turned suddenly solemn.
+#{monster.name} broke through the doors of #{hero.company} and ambushed #{quest_giver.name}
+in the hallways. #{monster.name} #{random_word(monster.traits)} and stabbed #{quest_giver.name}.
+#{quest_giver.name} #{random_word(quest_giver.traits)}, and called for help. "If you cannot give
+me help", #{quest_giver.name} cried, "then give me justice!"
 
-"I'm offering to make you henchman to a king, #{the_enemy.name}."
+#{quest_giver.name} then died of blood loss.
 
-"King of what? Where?"
+#{monster.name} #{random_word(monster.traits)}. Happy with his evil deed, #{monster.name} left the
+building, and returned back to #{noun}.
 
-He #{random_word(main_character.traits,"Purpose")}. He shrugged. "What matter? If you seek adventure, you can find it—somewhere. If you feel the lure of romance—it will come to you."
+The rest of the co-workers were scared, but not #{hero.name}! He knew that action had to be taken,
+or #{monster.name} will just return again to terrorize #{hero.company}.
 
-I said, "Henchman to a king?"
-But still he would not smile. "Yes. If I were king. I'm serious. Absolutely.
-In all this world there is no one who cares a damn about me. Not in this world, but...."
-He checked himself. He went on, "You are the same. You have no relatives?"
-"No. None that ever think of me."
-"Nor a sweetheart. Or have you?"
-"No," I smiled. "Not yet. Maybe never."
-"But you are too interested in Wall Street to leave it for the open road?" He was sarcastic now.
-"Or do you fear deeds of daring? Do you want to right a great wrong? #{goal(main_character.traits)}? Or do you want to go down to work as usual in the subway to-morrow morning? Are you afraid that in this process of becoming henchman to a king you may perchance get killed?"
-I matched his caustic tone. "Let's hear it, #{main_character.name}."
+#{hero.name} started training for combat, looking for the location of #{noun} and researching
+the weaknesses of #{monster.name}. #{hero.name} #{random_word(hero.traits)}. He had a job to do.
 
+A real job.
 
+Finally, after 5 days of planning, #{hero.name} was ready! He #{random_word(hero.traits)}, and
+left #{hero.company}, to travel over to #{noun} and end the life of #{monster.name}. But,
+#{monster.name} was prepared.
+
+When #{hero.name} arrived at #{noun}, #{monster.name} was waiting. #{hero.name} #{random_word(hero.traits)},
+while #{monster.name} #{random_word(monster.traits)}. #{monster.name} stabbed #{hero.name} in the heart,
+and #{hero.name} collapsed to the floor. But, #{hero.name} knew that his own survival was not important:
+only the death of #{monster.name}.
+
+#{hero.name} pulled out his own knife and slashed #{monster.name}'s legs. Then, #{hero.name} died from blood loss,
+pleased at last that #{quest_giver.name}'s request for 'justice' was fufilled.
+
+#{monster.name} stared at his own wounds, and #{random_word(monster.traits)}. He then looked up, and saw
+his son, #{monster_kid.name}. #{monster.name} said, "Avenge my death. Attack #{hero.company}."
+
+When #{monster.name} died, #{monster_kid.name} #{random_word(monster_kid.traits)}, and buried #{monster.name} in the
+hallways of #{noun}. For the cycle of violence was all that #{noun} knew, and all that sustained #{noun}. #{monster_kid.name}
+began his training.
 
 END
+
+#Conclusion: For this thing to work properly, the word phrases has to be changed! It has to be
+#made more generic, and less suited for a specific setting. It has to be...literally...plug-and-play.
+
+#I think it works fine, as a good rough draft. Word count seems to be at ~500 words though.
+#That's enough to have it be qualified as a 'flash fiction', but not as a 'true' 'short-story'.
+
+#I am pretty terrible at writing combat and training. Perhaps I can flesh that out in its own
+#modules?
+
+#While modularizing the phrases can be possible, I would support probably going down to the
+#Word Metal and fixing it. Once the Word Metal is fine, I can move back to higher-level functions.
+#Lower-level functions are still not optimized enough.
+
+#According to: http://www.writing-world.com/fiction/length.shtml
+#Micro-Fiction (up to 100 words): This very abbreviated story is often difficult to write,
+#and even harder to write well, but the markets for micro fiction are becoming
+#increasingly popular in recent times. Publishers love them, as they take up
+# almost no room and don't cost them their budgets. Pay rates are often low, but for
+#so few words, the rate per word averages quite high. Here's an example:
+
+#6 word micro-story: "For Sale: Baby shoes. Never Worn." - Attributed to Ernest Hemingway
+#Flash Fiction (100 - 1,000 words): This is the type of short-short story you would expect to 
+#find in a glossy magazine, often used to fill one page of quick romance (or quick humor,
+# in men's mags) Very popular, quick and easy to write, and easier to sell!
+
+#Short Story (1,000 - 7,500 words):  The 'regular' short story, usually found in periodicals
+# or anthology collections. Most 'genre' zines will features works at this length.
+
+#Novellette (7,500 - 20,000 words): Often a novellette-length work is difficult to sell
+# to a publisher. It is considered too long for most publishers to insert comfortably
+# into a magazine, yet too short for a novel. Generally, authors will piece together
+# three or four novellette-length works into a compilation novel.
+
+#Novella (20,000 - 50,000 words):  Although most print publishers will balk at printing
+# a novel this short, this is almost perfect for the electronic publishing market length.
+# The online audience doesn't always have the time or the patience to sit through a 100,000
+# word novel. Alternatively, this is an acceptable length for a short work of non-fiction.
+
+#Novel (50,000 -110,000 words): Most print publishers prefer a minimum word count
+# of around 70,000 words for a first novel, and some even hesitate for any work shorter
+# than 80,000. Yet any piece of fiction climbing over the 110,000 word mark also tends
+# to give editors some pause. They need to be sure they can produce a product that
+# won't over-extend their budget, but still be enticing enough to readers to be saleable.
+#Imagine paying good money for a book less than a quarter-inch thick?
+
+#Epics and Sequels (Over 110,000 words): If your story extends too far over the 110,000 mark,
+# perhaps consider where you could either condense the story to only include relevant details,
+# or lengthen it to span out into a sequel, or perhaps even a trilogy.
+#(Unless, of course, you're Stephen King - then it doesn't matter what length your manuscript is 
+#- a publisher is a little more lenient with an established author who has a well-established
+# readership)
