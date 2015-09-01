@@ -1,7 +1,7 @@
 #Method came from the Facets gem (https://github.com/rubyworks/facets)
 
 #Facets gem is dual-licensed under either the Ruby License or the GPL v2.
-#I have chosen the Ruby License for this project:
+#I have chosen to follow the Ruby License:
 #https://github.com/rubyworks/facets/blob/master/LICENSE.txt
 
 # (Comment from the source code:)
