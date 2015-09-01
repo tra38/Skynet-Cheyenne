@@ -1,0 +1,57 @@
+puts <<-END
+#{hero.name} never cared too much about #{noun}. It was too far away, too remote for him
+to worry about. Instead, he would busy himself with his career as a #{hero.job},
+where he would #{hero.job_purpose}. While he would work, #{hero.name} wished for some
+adventure in his life.
+
+#{hero.name}'s boss was #{quest_giver.name}, a #{quest_giver.job}. He was not a nice man,
+ but he was not a mean man either, and desired to #{quest_giver.job_purpose}.
+
+One day, #{monster.name} arrived to the corporate offices of #{hero.company}. A guard came and asked
+for an 'ID' to verify his presence. #{monster.name} said that he came from the #{noun}, here for "vengance".
+#{monster.name} #{random_word(monster.traits)}, and so stabbed the guard.
+
+#{hero.name} saw #{monster.name} from his windows, and #{random_word(hero.traits, "Purpose")}.
+#{monster.name} saw #{hero.name} right back, and #{random_word(monster.traits, "Purpose")}.
+
+#{monster.name} had a purpose: to kill #{quest_giver.name}. #{monster.name} hated
+how #{quest_giver.name} tried to destroy #{noun} years ago. It was time to pay him back.
+
+#{monster.name} broke through the doors of #{hero.company} and ambushed #{quest_giver.name}
+in the hallways. #{monster.name} #{random_word(monster.traits)} and stabbed #{quest_giver.name}.
+#{quest_giver.name} #{random_word(quest_giver.traits)}, and called for help. "If you cannot give
+me help", #{quest_giver.name} cried, "then give me justice!"
+
+#{quest_giver.name} then died of blood loss.
+
+#{monster.name} #{random_word(monster.traits)}. Happy with his evil deed, #{monster.name} left the
+building, and returned back to #{noun}.
+
+The rest of the co-workers were scared, but not #{hero.name}! He knew that action had to be taken,
+or #{monster.name} will just return again to terrorize #{hero.company}.
+
+#{hero.name} started training for combat, looking for the location of #{noun} and researching
+the weaknesses of #{monster.name}. #{hero.name} #{random_word(hero.traits)}. He had a job to do.
+
+A real job.
+
+Finally, after 5 days of planning, #{hero.name} was ready! He #{random_word(hero.traits)}, and
+left #{hero.company}, to travel over to #{noun} and end the life of #{monster.name}. But,
+#{monster.name} was prepared.
+
+When #{hero.name} arrived at #{noun}, #{monster.name} was waiting. #{hero.name} #{random_word(hero.traits)},
+while #{monster.name} #{random_word(monster.traits)}. #{monster.name} stabbed #{hero.name} in the heart,
+and #{hero.name} collapsed to the floor. But, #{hero.name} knew that his own survival was not important:
+only the death of #{monster.name}.
+
+#{hero.name} pulled out his own knife and slashed #{monster.name}'s legs. Then, #{hero.name} died from blood loss,
+pleased at last that #{quest_giver.name}'s request for 'justice' was fufilled.
+
+#{monster.name} stared at his own wounds, and #{random_word(monster.traits)}. He then looked up, and saw
+his son, #{monster_kid.name}. #{monster.name} said, "Avenge my death. Attack #{hero.company}."
+
+When #{monster.name} died, #{monster_kid.name} #{random_word(monster_kid.traits)}, and buried #{monster.name} in the
+hallways of #{noun}. For the cycle of violence was all that #{noun} knew, and all that sustained #{noun}. #{monster_kid.name}
+began his training.
+
+END
