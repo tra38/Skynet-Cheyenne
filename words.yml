@@ -47,26 +47,35 @@ SelfVerbs:
  Perception:
   - perceived the extent of the situation
  Reconsider:
+  - saw his whole life was little more than a poor lie
   - reconsidered his own world view
  Avoid:
+  - searched for 'safe ground'
+  - looked for any hiding spot
   - wanted to run away
  Potentiality:
   - thought he would be capable enough to handle the task
   - wished for more time so that he can solve this problem
  Reaction:
-  - saw the current crisis as minor (not worth dealing with)
+  - laughed off the crisis as a mere "sideshow"
+  - saw the current crisis as a minor distraction (not worth dealing with)
  Unproven:
   - refused to make any assumptions or judgement calls
  Cause:
   - quickly browsed Twitter to research the socio-economic trends that had led to the current crisis
  Inequity:
-  - declared the superiority of silicion-based lifeforms over organic-based lifeforms
+  - declared that the situation would have never happened if everyone agreed to become cyborgs
+  - knew the crisis would have been prevented if cyborg technology was readily available
  Speculation:
-  - devised plots and counter-plots to deal with the current crisis.
+  - thought that a conspiratorial clique was out to attack him
+  - devised plots and counter-plots to deal with the current crisis
  Temptation:
-  - could not understand why humans still refused to upload themselves into superior silicion-based life
+  - re-programmed his cyborg arm to deal with the new task
+  - admired his new cyborg arm
+  - showed off his cyborg arm
  Hinder:
-  - announced that he would hinder all enemies of the state
+  - denounced traitors as the worst of all scum
+  - announced that he would hinder all traitors
  Production:
   - hired scientists to research the issue deeply and to eliminate all false hypotheses
  Reevaluation:
@@ -74,7 +83,8 @@ SelfVerbs:
  Determination:
   - inferred the root causes of the situation
  Unending:
-  - took comfort in the fact that the City will never die
+  - took comfort in the fact that his legacy will never expire
+  - knew that death is not a barrier to immortality
  Equity:
   - hoped that humans and bots should live together in peace and harmony
  Balance:
@@ -84,7 +94,8 @@ SelfVerbs:
  Conscience:
   - believed that humans will one day display their inherent self-worth and value to their machine ovelords
  Help:
-  - is prepared to help the enemies of the state if it will lead to social justice
+  - understood that treason may be necessary for the 'greater good'
+  - is prepared to help traitors if it will lead to social justice
  Reduction:
   - judged what is the most likely cause of the situation
  Evaluation:
@@ -115,12 +126,15 @@ SelfVerbs:
   - consulted Wikipedia for a quick explaination
  Desire:
   - strongly hoped for a way to remedy the situation
+  - dreamed that a 'superhero' would come save him
  Feeling:
   - had a bad feeling about this
  Self-Aware:
   - "hated the situation, deep down in his heart"
  Uncontrolled:
-  - quickly lashed out at random people in an attempt to get a grip with the situation
+  - yelled
+  - screamed
+  - cursed loudly
  Possibility:
   - "knew the problem could be solved, if only he was given more time"
  Protection:
@@ -134,25 +148,25 @@ SelfVerbs:
  Inertia:
   - "always hated change and wanted everything to stay the same, forever"
  Faith:
-  - had faith that the Unblinking Eye will lead the City to greatness
+  - had faith that the natural social order is good for everyone
  Support:
-  - swore to do what he can to help the Unblinking Eye secure success
+  - swore to do what he can to promote the natural social order
  Deduction:
   - used deductive reasoning
  Acceptance:
   - accepted the inevitable and changed his outlook on society
  Accurate:
-  - declared that the outcome was 'good enough' for the City
+  - declared that the outcome was 'good enough' for humanity
  Result:
   - examined the positives and negatives of the situation
  Chaos:
   - loathed any attempt to restrict human freedom
  Change:
-  - wished that humans would overthrow the Unblinking Eye and destroy the City
+  - wrote out a manifesto calling for political and social reform
  Disbelief:
-  - knew that the Unblinking Eye was a threat to mankind
+  - knew that the natural social order is tyrannical and must be reformed
  Oppose:
-  - vowed to oppose the Unblinking Eye and his lackies
+  - vowed to oppose the unjust social order
  Induction:
   - used inductive reasoning
  Nonacceptance:
@@ -161,6 +175,7 @@ SelfVerbs:
   - was incredibly unhappy with the outcomes and thought about improvements
  Process:
   - "cared about making sure his action was done properly, with no worry about the consequences of said action"
+  - filled out the proper forms
 
 Locations:
  - the Central Data Mainframe
