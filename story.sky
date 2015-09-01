@@ -1,4 +1,3 @@
-puts <<-END
 #{hero.name} never cared too much about #{noun}. It was too far away, too remote for him
 to worry about. Instead, he would busy himself with his career as a #{hero.job},
 where he would #{hero.job_purpose}. While he would work, #{hero.name} wished for some
@@ -53,5 +52,3 @@ his son, #{monster_kid.name}. #{monster.name} said, "Avenge my death. Attack #{h
 When #{monster.name} died, #{monster_kid.name} #{random_word(monster_kid.traits)}, and buried #{monster.name} in the
 hallways of #{noun}. For the cycle of violence was all that #{noun} knew, and all that sustained #{noun}. #{monster_kid.name}
 began his training.
-
-END

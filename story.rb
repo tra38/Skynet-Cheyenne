@@ -1,4 +1,5 @@
 require_relative 'story_generator'
+require_relative 'string_interpolation'
 require 'faker'
 require 'facets'
 
