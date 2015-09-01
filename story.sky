@@ -1,54 +1,54 @@
-#{hero.name} never cared too much about #{noun}. It was too far away, too remote for him
-to worry about. Instead, he would busy himself with his career as a #{hero.job},
-where he would #{hero.job_purpose}. While he would work, #{hero.name} wished for some
+puts %{#{HERO.name} never cared too much about #{NOUN}. It was too far away, too remote for him
+to worry about. Instead, he would busy himself with his career as a #{HERO.job},
+where he would #{HERO.job_purpose}. While he would work, #{HERO.name} wished for some
 adventure in his life.
 
-#{hero.name}'s boss was #{quest_giver.name}, a #{quest_giver.job}. He was not a nice man,
- but he was not a mean man either, and desired to #{quest_giver.job_purpose}.
+#{HERO.name}'s boss was #{QUEST_GIVER.name}, a #{QUEST_GIVER.job}. He was not a nice man,
+ but he was not a mean man either, and desired to #{QUEST_GIVER.job_purpose}.
 
-One day, #{monster.name} arrived to the corporate offices of #{hero.company}. A guard came and asked
-for an 'ID' to verify his presence. #{monster.name} said that he came from the #{noun}, here for "vengance".
-#{monster.name} #{random_word(monster.traits)}, and so stabbed the guard.
+One day, #{MONSTER.name} arrived to the corporate offices of #{HERO.company}. A guard came and asked
+for an 'ID' to verify his presence. #{MONSTER.name} said that he came from the #{NOUN}, here for "vengance".
+#{MONSTER.name} #{random_word(MONSTER.traits)}, and so stabbed the guard.
 
-#{hero.name} saw #{monster.name} from his windows, and #{random_word(hero.traits, "Purpose")}.
-#{monster.name} saw #{hero.name} right back, and #{random_word(monster.traits, "Purpose")}.
+#{HERO.name} saw #{MONSTER.name} from his windows, and #{random_word(HERO.traits, "Purpose")}.
+#{MONSTER.name} saw #{HERO.name} right back, and #{random_word(MONSTER.traits, "Purpose")}.
 
-#{monster.name} had a purpose: to kill #{quest_giver.name}. #{monster.name} hated
-how #{quest_giver.name} tried to destroy #{noun} years ago. It was time to pay him back.
+#{MONSTER.name} had a purpose: to kill #{QUEST_GIVER.name}. #{MONSTER.name} hated
+how #{QUEST_GIVER.name} tried to destroy #{NOUN} years ago. It was time to pay him back.
 
-#{monster.name} broke through the doors of #{hero.company} and ambushed #{quest_giver.name}
-in the hallways. #{monster.name} #{random_word(monster.traits)} and stabbed #{quest_giver.name}.
-#{quest_giver.name} #{random_word(quest_giver.traits)}, and called for help. "If you cannot give
-me help", #{quest_giver.name} cried, "then give me justice!"
+#{MONSTER.name} broke through the doors of #{HERO.company} and ambushed #{QUEST_GIVER.name}
+in the hallways. #{MONSTER.name} #{random_word(MONSTER.traits)} and stabbed #{QUEST_GIVER.name}.
+#{QUEST_GIVER.name} #{random_word(QUEST_GIVER.traits)}, and called for help. "If you cannot give
+me help", #{QUEST_GIVER.name} cried, "then give me justice!"
 
-#{quest_giver.name} then died of blood loss.
+#{QUEST_GIVER.name} then died of blood loss.
 
-#{monster.name} #{random_word(monster.traits)}. Happy with his evil deed, #{monster.name} left the
-building, and returned back to #{noun}.
+#{MONSTER.name} #{random_word(MONSTER.traits)}. Happy with his evil deed, #{MONSTER.name} left the
+building, and returned back to #{NOUN}.
 
-The rest of the co-workers were scared, but not #{hero.name}! He knew that action had to be taken,
-or #{monster.name} will just return again to terrorize #{hero.company}.
+The rest of the co-workers were scared, but not #{HERO.name}! He knew that action had to be taken,
+or #{MONSTER.name} will just return again to terrorize #{HERO.company}.
 
-#{hero.name} started training for combat, looking for the location of #{noun} and researching
-the weaknesses of #{monster.name}. #{hero.name} #{random_word(hero.traits)}. He had a job to do.
+#{HERO.name} started training for combat, looking for the location of #{NOUN} and researching
+the weaknesses of #{MONSTER.name}. #{HERO.name} #{random_word(HERO.traits)}. He had a job to do.
 
 A real job.
 
-Finally, after 5 days of planning, #{hero.name} was ready! He #{random_word(hero.traits)}, and
-left #{hero.company}, to travel over to #{noun} and end the life of #{monster.name}. But,
-#{monster.name} was prepared.
+Finally, after 5 days of planning, #{HERO.name} was ready! He #{random_word(HERO.traits)}, and
+left #{HERO.company}, to travel over to #{NOUN} and end the life of #{MONSTER.name}. But,
+#{MONSTER.name} was prepared.
 
-When #{hero.name} arrived at #{noun}, #{monster.name} was waiting. #{hero.name} #{random_word(hero.traits)},
-while #{monster.name} #{random_word(monster.traits)}. #{monster.name} stabbed #{hero.name} in the heart,
-and #{hero.name} collapsed to the floor. But, #{hero.name} knew that his own survival was not important:
-only the death of #{monster.name}.
+When #{HERO.name} arrived at #{NOUN}, #{MONSTER.name} was waiting. #{HERO.name} #{random_word(HERO.traits)},
+while #{MONSTER.name} #{random_word(MONSTER.traits)}. #{MONSTER.name} stabbed #{HERO.name} in the heart,
+and #{HERO.name} collapsed to the floor. But, #{HERO.name} knew that his own survival was not important:
+only the death of #{MONSTER.name}.
 
-#{hero.name} pulled out his own knife and slashed #{monster.name}'s legs. Then, #{hero.name} died from blood loss,
-pleased at last that #{quest_giver.name}'s request for 'justice' was fufilled.
+#{HERO.name} pulled out his own knife and slashed #{MONSTER.name}'s legs. Then, #{HERO.name} died from blood loss,
+pleased at last that #{QUEST_GIVER.name}'s request for 'justice' was fufilled.
 
-#{monster.name} stared at his own wounds, and #{random_word(monster.traits)}. He then looked up, and saw
-his son, #{monster_kid.name}. #{monster.name} said, "Avenge my death. Attack #{hero.company}."
+#{MONSTER.name} stared at his own wounds, and #{random_word(MONSTER.traits)}. He then looked up, and saw
+his son, #{MONSTER_KID.name}. #{MONSTER.name} said, "Avenge my death. Attack #{HERO.company}."
 
-When #{monster.name} died, #{monster_kid.name} #{random_word(monster_kid.traits)}, and buried #{monster.name} in the
-hallways of #{noun}. For the cycle of violence was all that #{noun} knew, and all that sustained #{noun}. #{monster_kid.name}
-began his training.
+When #{MONSTER.name} died, #{MONSTER_KID.name} #{random_word(MONSTER_KID.traits)}, and buried #{MONSTER.name} in the
+hallways of #{NOUN}. For the cycle of violence was all that #{NOUN} knew, and all that sustained #{NOUN}. #{MONSTER_KID.name}
+began his training."}

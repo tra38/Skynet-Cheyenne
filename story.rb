@@ -1,7 +1,5 @@
 require_relative 'story_generator'
-require_relative 'string_interpolation'
 require 'faker'
-require 'facets'
 
 class Character
 	attr_reader :name, :enemy, :type, :traits, :job, :job_purpose, :company
@@ -16,6 +14,23 @@ class Character
 		@company = Faker::Company.name
 	end
 end
+
+# class Story
+# 	attr_reader :hero, :monster, :quest_giver, :monster_kid, :noun
+
+# 	def initialize(args)
+# 		@hero = args[:hero]
+# 		@monster = args[:monster]
+# 		@quest_giver = args[:quest_giver]
+# 		@monster_kid = args[:monster_kid]
+# 		@noun = args[:noun]
+# 	end
+
+# 	def passage(file)
+# 		load "#{file}"
+# 	end
+
+# end
 
 character_array = []
 
@@ -35,35 +50,25 @@ def find_and_return(array, target_character)
 	end
 end
 
+p character_array.length
+
+HERO = character_array.shuffle!.pop
 
 p character_array.length
 
-hero = character_array.shuffle!.pop
+MONSTER = find_and_return(character_array, HERO.enemy )
 
-puts "The main character is #{hero.name}, and he is a #{hero.type}!"
+QUEST_GIVER = character_array.shuffle!.pop
 
-p character_array.length
-
-monster = find_and_return(character_array, hero.enemy )
-
-puts "And the monster is #{monster.name}, the #{monster.type}!"
-
-quest_giver = character_array.shuffle!.pop
-
-puts "And the quest_giver is #{quest_giver.name}, the #{quest_giver.type}!"
-
-monster_kid = find_and_return(character_array, quest_giver.enemy)
-
+MONSTER_KID = find_and_return(character_array, QUEST_GIVER.enemy)
 
 noun = ["hat", "car keys", "wedding", "sorrow", "violin case", "flower"].sample
 
 noun += " " + ['museum','plaza','center','foundation','academy'].sample
 
-noun = noun.split(" ").map(&:capitalize).join(" ")
+NOUN = noun.split(" ").map(&:capitalize).join(" ")
 
-file = File.read("story.sky")
-
-puts String.interpolate { file }
+load("story.sky")
 
 
 #Conclusion: For this thing to work properly, the word phrases has to be changed! It has to be
