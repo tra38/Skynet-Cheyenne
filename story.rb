@@ -68,8 +68,6 @@ noun += " " + ['museum','plaza','center','foundation','academy'].sample
 
 NOUN = noun.split(" ").map(&:capitalize).join(" ")
 
-load("story.sky")
-
 
 #Conclusion: For this thing to work properly, the word phrases has to be changed! It has to be
 #made more generic, and less suited for a specific setting. It has to be...literally...plug-and-play.
