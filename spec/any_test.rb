@@ -32,7 +32,7 @@ describe "#any" do
 		end
 	end
 
-	describe "when dealing with multiple arrays" do
+	describe "when dealing with multiple nested arrays" do
 		before(:each) do
 			@array_of_arrays = [[0,1,2],[3,4,5],[6,7,8]]
 		end
@@ -40,8 +40,7 @@ describe "#any" do
 		it "will return unique elements from all arrays" do
 			output_array = []
 			9.times do
-				inner_array = @array_of_arrays.any 
-				output_array << inner_array.any
+				output_array << @array_of_arrays.any 
 			end
 			output_array.sort!
 			expect(output_array).to eq([0,1,2,3,4,5,6,7,8])
